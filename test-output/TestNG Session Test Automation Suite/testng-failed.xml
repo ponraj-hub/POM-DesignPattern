@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG Session Test Automation Suite]" parallel="none">
+  <parameter name="passWord" value="Naindira@4436562"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="userName" value="ponraj8785@gmail.com"/>
+  <listeners>
+    <listener class-name="Analyser.MyTransformer"/>
+  </listeners>
+  <test name="Parameter TestNG HubSpot Chrome for ForgotPasswordtest Browser(failed)" parallel="none">
+    <parameter name="passWord" value="Naindira@4436562"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="userName" value="ponraj8785@gmail.com"/>
+    <classes>
+      <class name="com.qa.mytest.ForgotPasswordTest">
+        <methods>
+          <include name="clickForgotlinkTest"/>
+          <include name="setupTest"/>
+          <include name="tearDown"/>
+          <include name="verifyForgotTitleTest"/>
+        </methods>
+      </class> <!-- com.qa.mytest.ForgotPasswordTest -->
+      <class name="com.qa.mytest.LoginTest">
+        <methods>
+          <include name="setupTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.mytest.LoginTest -->
+    </classes>
+  </test> <!-- Parameter TestNG HubSpot Chrome for ForgotPasswordtest Browser(failed) -->
+</suite> <!-- Failed suite [TestNG Session Test Automation Suite] -->
